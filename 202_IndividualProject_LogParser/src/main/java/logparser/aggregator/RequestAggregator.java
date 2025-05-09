@@ -7,7 +7,16 @@ import java.util.*;
 public class RequestAggregator {
     private static class RequestData {
         List<Integer> responseTimes = new ArrayList<>();
-        Map<String, Integer> statusCategories = new HashMap<>();
+        static final Map<String, Integer> statusCategories;
+        static {
+            statusCategories = new java.util.HashMap<>();
+            statusCategories.put("1XX",0);
+            statusCategories.put("2XX",0);
+            statusCategories.put("3XX",0);
+            statusCategories.put("4XX",0);
+            statusCategories.put("5XX",0);
+        }
+    
     }
 
     private final Map<String, RequestData> routeData = new HashMap<>();
@@ -17,7 +26,7 @@ public class RequestAggregator {
         data.responseTimes.add(responseTime);
 
         String category = getStatusCategory(statusCode);
-        data.statusCategories.put(category, data.statusCategories.getOrDefault(category, 0) + 1);
+        data.statusCategories.put(category, data.statusCategories.get(category) + 1);
     }
 
     private String getStatusCategory(int code) {
