@@ -1,0 +1,70 @@
+{
+  "/api/retry" : {
+    "response_times" : {
+      "min" : 250.0,
+      "50_percentile" : 250.0,
+      "90_percentile" : 250.0,
+      "95_percentile" : 250.0,
+      "99_percentile" : 250.0,
+      "max" : 250.0
+    },
+    "status_codes" : {
+      "1XX" : 0,
+      "2XX" : 4,
+      "3XX" : 0,
+      "4XX" : 1,
+      "5XX" : 2
+    }
+  },
+  "/api/status" : {
+    "response_times" : {
+      "min" : 100.0,
+      "50_percentile" : 150.0,
+      "90_percentile" : 300.0,
+      "95_percentile" : 300.0,
+      "99_percentile" : 300.0,
+      "max" : 300.0
+    },
+    "status_codes" : {
+      "1XX" : 0,
+      "2XX" : 4,
+      "3XX" : 0,
+      "4XX" : 1,
+      "5XX" : 2
+    }
+  },
+  "/api/update" : {
+    "response_times" : {
+      "min" : 200.0,
+      "50_percentile" : 200.0,
+      "90_percentile" : 200.0,
+      "95_percentile" : 200.0,
+      "99_percentile" : 200.0,
+      "max" : 200.0
+    },
+    "status_codes" : {
+      "1XX" : 0,
+      "2XX" : 4,
+      "3XX" : 0,
+      "4XX" : 1,
+      "5XX" : 2
+    }
+  },
+  "/home" : {
+    "response_times" : {
+      "min" : 25.0,
+      "50_percentile" : 25.0,
+      "90_percentile" : 25.0,
+      "95_percentile" : 25.0,
+      "99_percentile" : 25.0,
+      "max" : 25.0
+    },
+    "status_codes" : {
+      "1XX" : 0,
+      "2XX" : 4,
+      "3XX" : 0,
+      "4XX" : 1,
+      "5XX" : 2
+    }
+  }
+}

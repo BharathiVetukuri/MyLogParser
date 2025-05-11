@@ -2,10 +2,6 @@
 target/
 *.iml
 
-# Output
-*.json
-input.txt
-
 # IDEs
 .idea/
 *.log
