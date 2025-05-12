@@ -44,64 +44,64 @@ For each type, the application extracts relevant information and computes tailor
 ## Example Outputs
 
 
-APM Aggregation (apm.json)
+### **APM Aggregation (apm.json)**
 
-{
-  "cpu_usage_percent": {
-    "minimum": 65,
-    "median": 72,
-    "average": 68.5,
-    "max": 72
-  }
-}
-
-
-Application Log Summary (application.json)
-
-{
-  "INFO": 2,
-  "ERROR": 1
-}
+      {
+        "cpu_usage_percent": {
+          "minimum": 65,
+          "median": 72,
+          "average": 68.5,
+          "max": 72
+        }
+      }
 
 
-Request Stats (request.json)
+### **Application Log Summary (application.json)**
 
-{
-  "/api/status": {
-    "response_times": {
-      "min": 100,
-      "50_percentile": 150,
-      "90_percentile": 200,
-      "max": 300
-    },
-    "status_codes": {
-      "2XX": 2,
-      "5XX": 1
-    }
-  }
-}
+      {
+        "INFO": 2,
+        "ERROR": 1
+      }
+
+
+### **Request Stats (request.json)**
+
+      {
+        "/api/status": {
+          "response_times": {
+            "min": 100,
+            "50_percentile": 150,
+            "90_percentile": 200,
+            "max": 300
+          },
+          "status_codes": {
+            "2XX": 2,
+            "5XX": 1
+          }
+        }
+      }
 
 
 # How to Execute
 
-Prerequisites
+**Prerequisites**
 
-Java 17+
+* Java 17+
 
-Maven 3.6+
+* Maven 3.6+
 
 
-Run Instructions
+### Run Instructions
 
-1. Build the application:
+**1. Build the application:**
 
-mvn clean compile
+      mvn clean compile
 
-2.Execute via CLI:
+**2.Execute via CLI:**
 
-mvn exec:java -Dexec.args="--file input.txt"
+      mvn exec:java -Dexec.args="--file input.txt"
 
-3. Expected Outputs:
+**3. Expected Outputs:**
 
 * apm.json
 
@@ -111,19 +111,19 @@ mvn exec:java -Dexec.args="--file input.txt"
 
 These files are generated in your project directory.
 
-Testing the System
+### Testing the System
 
 Unit tests are available to validate:
 
-Metric-based aggregation (APM)
+* Metric-based aggregation (APM)
 
-Severity count (Application logs)
+* Severity count (Application logs)
 
-Percentile and status code analysis (Request logs)
+* Percentile and status code analysis (Request logs)
 
-To run all tests:
+**To run all tests:**
 
-mvn test
+      mvn test
 
 # Architecture and Design Patterns
 
