@@ -1,5 +1,5 @@
 # Log Parser CLI Application
-## Description
+## Description for app
 A robust Java-based command-line application that analyzes a `.txt` file containing mixed log entries. It intelligently classifies and processes APM, Application, and Request logs, generating structured JSON outputs for downstream analysis or monitoring pipelines.
 
 
