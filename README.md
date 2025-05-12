@@ -1,4 +1,4 @@
-# Log Parser CLI Application – CMPE 202 Project
+# Log Parser CLI Application
 
 A robust Java-based command-line application that analyzes a `.txt` file containing mixed log entries. It intelligently classifies and processes APM, Application, and Request logs, generating structured JSON outputs for downstream analysis or monitoring pipelines.
 
